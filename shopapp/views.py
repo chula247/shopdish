@@ -13,4 +13,8 @@ def images(request):
 
 def about(request):
     return render(request,'about.html')
+def form(request):
+    return render(request,'form.html')
 
+def product(request):
+    return render(request,'product.html')

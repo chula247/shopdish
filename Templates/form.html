@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+     {% load static%}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+</head>
+<body>
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'product' %}">Product</a>
+
+<br>
+
+
+
+   <form action="" class="container">
+<legend class="">Registration Form</legend>
+<!---Fisrtname-->
+    <label for="fname" class="form-label">First Name</label>
+       <input type="text" name="firstname" required="required">
+       <br>
+    <!---lastname-->
+
+     <label for="lname" class="form-label">Last Name</label>
+        <input type="text" name="lastname" required="required">
+       <br>
+<!---email-->
+    <label for="email" class="form-label">Email</label>
+        <input type="email" name="email" required="required">
+       <br>
+    <!---password-->
+    <label for="pwd" class="form-label">Password</label>
+        <input type="pwd" name="password" required="required">
+       <br>
+
+    <label for="pwd" class="form-label">Re-type password</label>
+       <input type="pwd" name="repassword" required="required">
+       <br>
+
+
+     <label for="contact" class="form-label">Contact</label>
+        <input type="text" name="contact" required="required">
+       <br>
+
+    <label for="gender" class="form-label">Gender</label>
+     <select name="gender" id="">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+       <br>
+<!--button-->
+    <button type="submit" class="btn btn-primary">Submit</button>
+       <br>
+
+</form>
+<br><br>
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+
+
+
+
+
+
+</body>
+</html>
